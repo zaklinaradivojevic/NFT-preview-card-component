@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@500&display=swap"
+    rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      margin-top:140px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
+  <div class="card_box" >
+    <div class="card_img"  onmouseenter="showImg()" onmouseleave="hideImg()">
+      <div class="card_view" id="card_view">
+        <img id="view" class="view"
+          src="https://raw.githubusercontent.com/zaklinaradivojevic/NFT-preview-card-component/92b859ac9d61ca05d8759edbad55c56a8ece83b3/images/icon-view.svg"
+          alt="view">
+      </div>
+    </div>
+    <div class="card_body">
+      <h1 class="card_title"> Equilibrium #3429</h1>
+      <p class="card_text">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <img class="svg_icon"
+        src="https://raw.githubusercontent.com/zaklinaradivojevic/NFT-preview-card-component/92b859ac9d61ca05d8759edbad55c56a8ece83b3/images/icon-ethereum.svg"
+        alt="svg-icon">
+      <p class="card_desc">0.041 ETH</p>
+      <img class="clock"
+        src="https://raw.githubusercontent.com/zaklinaradivojevic/NFT-preview-card-component/92b859ac9d61ca05d8759edbad55c56a8ece83b3/images/icon-clock.svg"
+        alt="clock">
+      <p class="clock_text">3 days left</p>
+      <div class="logo_box">
+        <img class="logo"
+          src="https://github.com/zaklinaradivojevic/NFT-preview-card-component/blob/main/images/image-avatar.png?raw=true"
+          alt="logo">
+        <p class="logo_text">Creation of</p>
+        <p class="logo_name">Jules Wyvern</p>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
